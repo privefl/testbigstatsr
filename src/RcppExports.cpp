@@ -11,7 +11,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
 // dbl2int_cpp
-int dbl2int_cpp(double x);
+IntegerVector dbl2int_cpp(double x);
 RcppExport SEXP _testbigstatsr_dbl2int_cpp(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;

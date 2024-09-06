@@ -2,7 +2,7 @@
 #'
 #' @param x A single double value.
 #'
-#' @return `x`, converted to integer.
+#' @return `x`, converted to integer, in 3 different ways.
 #' @export
 #'
 #' @examples

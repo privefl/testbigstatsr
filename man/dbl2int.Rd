@@ -10,7 +10,7 @@ dbl2int(x)
 \item{x}{A single double value.}
 }
 \value{
-\code{x}, converted to integer.
+\code{x}, converted to integer, in 3 different ways.
 }
 \description{
 Convert double to int
