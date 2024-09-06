@@ -1,6 +1,7 @@
 test_that("dbl2int() works", {
   expect_identical(dbl2int(1.2), rep(1L, 4))
   expect_identical(dbl2int(NA_real_), rep(NA_integer_, 4))
+  expect_identical(dbl2int(NaN), rep(NA_integer_, 4))
 })
 
 test_that("NA conversion to integer work with FBMs", {
