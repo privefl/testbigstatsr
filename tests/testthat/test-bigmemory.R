@@ -1,6 +1,6 @@
 test_that("Conversion to big.matrix works", {
 
-  X <- bigstatsr::FBM(10, 10, type = "integer", init = 0)
+  X <- bigstatsr::FBM(10, 10, type = "double", init = 0)
   X[1] <- NA
 
   # Conversion works
