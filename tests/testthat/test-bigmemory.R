@@ -18,10 +18,10 @@ test_that("Conversion to big.matrix works", {
 
 })
 
-test_that("Conversion to big.matrix works", {
+test_that("big.matrix accessor works", {
 
   X <- bigmemory::big.matrix(1, 1, type = "raw", init = 0)
   expect_identical(X[1, 1], as.raw(0))
-  expect_identical(X[1], 0L)  # should be 00
+  expect_identical(X[1], 0L)  # should be 00, but okay..
 
 })
