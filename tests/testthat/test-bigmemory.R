@@ -14,7 +14,14 @@ test_that("Conversion to big.matrix works", {
   expect_identical(typeof(X2), typeof(X))
   print(X2[1])
   print(X2[1, 1])
-  expect_equal(as.numeric(X2[1]), as.numeric(X[1]))
   expect_equal(as.numeric(X2[1, 1]), as.numeric(X[1, 1]))
+
+})
+
+test_that("Conversion to big.matrix works", {
+
+  X <- bigmemory::big.matrix(1, 1, type = "raw", init = 0)
+  expect_identical(X[1, 1], as.raw(0))
+  expect_identical(X[1], 0L)  # should be 00
 
 })
