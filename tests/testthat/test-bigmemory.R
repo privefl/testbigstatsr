@@ -1,12 +1,6 @@
-################################################################################
-
-context("BIGMEMORY")
-
-################################################################################
-
 test_that("Conversion to big.matrix works", {
 
-  X <- FBM(10, 10, type = "integer", init = 0)
+  X <- bigstatsr::FBM(10, 10, type = "integer", init = 0)
   X[1] <- NA
 
   # Conversion works
@@ -15,5 +9,3 @@ test_that("Conversion to big.matrix works", {
   expect_identical(typeof(X2), typeof(X))
   expect_equal(as.numeric(X2[1]), as.numeric(X[1]))
 })
-
-################################################################################
